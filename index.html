@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIO</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="formulario">
     <form action="">
         <table>
             <tr>
@@ -31,7 +33,7 @@
             <tr>
                 <td>MATERIA</td>
                 <td>
-                    <select name="materia">
+                    <select class="seleccion" name="materia">
                         <option value="">CALCULO</option>
                         <option value="">FISICA</option>
                         <option value="">PROGRAMACION</option>
@@ -46,15 +48,14 @@
                 <td>TELEFONO</td>
                 <td> <input type="phone" name="telefono" placeholder="Tu telefono"></td>
             </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="ENVIAR" name="enviar" >
-                </td>
-            </tr>
-
 
         </table>
+        <tr>
+            <td>
+                <input type="submit" value="ENVIAR" name="enviar" >
+            </td>
+        </tr>
     </form>
-    
+    </div>
 </body>
 </html>
