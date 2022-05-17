@@ -48,7 +48,7 @@ input [type="radio"]{
     margin-bottom: 20px;
 }
 
-input[type = "mail"]{
+input[type = "email"]{
     width: 100%;
     background: none;
     border: 1px solid #0D0D0D;

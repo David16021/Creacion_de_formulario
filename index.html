@@ -9,36 +9,37 @@
 </head>
 <body>
     <div class="formulario">
-    <form action="">
+    <form action="formu.php" method="post">
         <table>
             <tr>
                 <td>NOMBRE:</td>
-                <td><input type="text" placeholder="Escribe tu nombre" name="nombre"></td>
+                <td><input type="text" placeholder="Escribe tu nombre" name="nombre" required></td>
             </tr>
             <tr>
                 <td>CONTRASENIA:</td>
-                <td><input type="password" placeholder="Tu contrasenia" name="password"></td>
+                <td><input type="password" placeholder="Tu contrasenia" name="password" required></td>
             </tr>
             <tr>
                 <td>GENERO</td>
                 <td>
-                    <input type="radio" name="genero"> FEMENINO
-                    <input type="radio" name="genero"> MASCULINO
+                    <input type="radio" name="genero" value="F" required> FEMENINO
+                    <input type="radio" name="genero" value="M" required> MASCULINO
                 </td>
             </tr>
             <tr>
                 <td>MAIL:</td>
-                <td><input type="mail" placeholder="Tu correo" name="mail"></td>
+                <td><input type="email" placeholder="Tu correo" name="email" required></td>
             </tr>
             <tr>
                 <td>MATERIA</td>
                 <td>
-                    <select class="seleccion" name="materia">
-                        <option value="">CALCULO</option>
-                        <option value="">FISICA</option>
-                        <option value="">PROGRAMACION</option>
-                        <option value="">BASE DE DATOS</option>
-                        <option value="">ANALISIS DE SISTEMAS</option>
+                    <select class="seleccion" name="materia" required>
+                        <option selected hidden value="">MATERIAS</option>
+                        <option value="calculo">CALCULO</option>
+                        <option value="fisica">FISICA</option>
+                        <option value="programacion">PROGRAMACION</option>
+                        <option value="database">BASE DE DATOS</option>
+                        <option value="analisis">ANALISIS DE SISTEMAS</option>
 
                     </select>
                 </td>
@@ -46,7 +47,7 @@
 
             <tr>
                 <td>TELEFONO</td>
-                <td> <input type="phone" name="telefono" placeholder="Tu telefono"></td>
+                <td> <input type="phone" name="telefono" placeholder="Tu telefono" required></td>
             </tr>
 
         </table>
