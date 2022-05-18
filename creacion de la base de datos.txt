@@ -1,0 +1,12 @@
+create database estudiantes;
+use estudiantes;
+
+create table usuarios(
+id int primary key auto_increment,
+nombre	varchar	(	40	)	,
+password_ varchar	(	20	)	,#cambiar pasword por pasword_ en el php o crearla manualmente con el mismo valor en myphpadmin
+genero	char	(	1	)	,
+email	varchar	(	40	)	,
+materia	varchar	(	20	)	,
+telefono 	int	(	11	)	
+);
